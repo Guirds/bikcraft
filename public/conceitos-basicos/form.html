@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conceitos Básicos de HTML</title>
+</head>
+  <body>
+    <table>
+      <tr>
+        <th>Produtos</th>
+        <th>Preços</th>
+      <tr>
+        <td>TV</td>
+        <td>PC</td>
+      </tr>
+      <tr>
+        <td>R$ 1.000,00</td>
+        <td>R$ 3.000,00</td>
+      </tr>
+    </table>
+
+    <section>
+      Representa uma parte genérica do documento.
+    </section>
+    <article>
+      Representa uma parte independente do documento, ela sozinha já tem sentido. Contém começo meio e fim
+    </article>
+
+    <article>
+      <header>
+        Esse é o cabeçalho da página ou artigo.
+      </header>
+      <p>Conteúdo do Artigo</p>
+      <footer>
+        Esse é o rodapé da página ou artigo.
+      </footer>
+    </article>
+
+    <form action="enviar.php" method="post" name="form">
+      <label for="nome">Nome</label> <!-- Titulo do input  -->
+      <input type="text" name="nome" id="nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea name="mensagem" id="mensagem" cols="30" rows="5" required ></textarea>
+
+      <div>
+        <label for="tv">
+          <input type="checkbox" value="tv" checked>
+          TV
+        </label>
+        <label for="pc">
+          <input type="checkbox" value="pc" >
+          pc
+        </label>
+      </div>
+
+      <button type="submit" id="enviar" name="enviar"> Solicitar Orçamneto</button>
+    </form>
+  </body>
+</html>
